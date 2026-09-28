@@ -1,0 +1,16 @@
+/* Barra superior (sticky): solo existe cuando ya hay un pokémon */
+.barra {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 22px;
+  background: rgba(10, 10, 12, .72);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--linea);
+}
+.marca {
+  font-size: 13px; font-weight: 800; letter-spacing: 3px;
+  text-transform: uppercase; white-space: nowrap;
+}
+@media (max-width: 560px) {
+  .barra { flex-wrap: wrap; }
+}

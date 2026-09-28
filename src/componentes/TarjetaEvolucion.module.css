@@ -1,0 +1,12 @@
+.tarjeta {
+  background: var(--panel); border: 1px solid var(--linea); border-radius: 16px;
+  padding: 18px 14px 14px; width: 150px; text-align: center; cursor: pointer;
+  color: var(--texto); font: inherit;
+  transition: border-color .25s, transform .25s;
+}
+.tarjeta:hover, .tarjeta:focus-visible { border-color: var(--acento); transform: translateY(-4px); outline: none; }
+.tarjeta img { width: 100px; height: 100px; object-fit: contain; display: block; margin: 0 auto; }
+.nombre { display: block; font-size: 14px; text-transform: capitalize; margin-top: 6px; }
+.numero { font-size: 11px; color: var(--tenue); }
+.actual { border-color: var(--acento); background: #16161d; }
+.sinImagen { width: 100px; height: 100px; margin: 0 auto; display: grid; place-items: center; color: var(--tenue); }

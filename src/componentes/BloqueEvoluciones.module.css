@@ -1,0 +1,3 @@
+.evo { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.flecha { color: var(--tenue); font-size: 22px; }
+.nota { color: var(--tenue); font-size: 14px; }

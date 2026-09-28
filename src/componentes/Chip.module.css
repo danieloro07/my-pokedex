@@ -1,0 +1,7 @@
+.chip {
+  display: inline-block; margin: 8px 8px 0 0; padding: 7px 16px;
+  background: #17171d; border: 1px solid var(--linea); border-radius: 20px;
+  color: var(--texto); font: inherit; font-size: 13px;
+  cursor: pointer; text-transform: capitalize;
+}
+.chip:hover, .chip:focus-visible { border-color: var(--acento); color: var(--acento); outline: none; }

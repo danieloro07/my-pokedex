@@ -1,0 +1,6 @@
+.avisos { max-width: 720px; margin: 0 auto; padding: 18px 22px 0; }
+.enInicio { padding: 16px 0 0; }
+.mensaje { padding: 12px 16px; border-radius: 10px; font-size: 14px; }
+.error { background: #2a1315; color: #ff9d9d; border: 1px solid #4a2024; }
+.info  { background: #12161f; color: #9db6e8; border: 1px solid #223049; }
+.sugerencias { margin-top: 12px; font-size: 14px; color: var(--tenue); }

@@ -1,0 +1,39 @@
+/* =========================================================
+   TOKENS: colores y medidas base.
+   --acento y --barra los sobrescribe <App> en su contenedor
+   (según el tipo del pokémon y el alto real de la barra).
+   --p lo escribe <Escenario> con el progreso del scroll.
+   ========================================================= */
+:root {
+  --fondo: #0a0a0c;
+  --panel: #111116;
+  --texto: #f4f4f6;
+  --tenue: #8b8b96;
+  --linea: #23232b;
+  --acento: #6b7280;
+  --p: 0;
+  --barra: 66px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- Animación de aparición (la activa el hook useRevelar) ---
+   Es global a propósito: la usan varios componentes. */
+.rev {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+}
+.rev.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rev { transition: none; opacity: 1; transform: none; }
+}

@@ -1,0 +1,27 @@
+.formulario { display: flex; gap: 10px; }
+.entrada {
+  flex: 1; min-width: 0; color: var(--texto);
+  background: #17171d; border: 1px solid var(--linea); border-radius: 10px;
+  transition: border-color .2s;
+}
+.entrada::placeholder { color: #62626e; }
+.entrada:focus { outline: none; border-color: var(--acento); }
+.boton {
+  cursor: pointer; color: #0a0a0c; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; background: var(--texto);
+  border: none; border-radius: 10px;
+}
+.boton:disabled { opacity: .45; cursor: not-allowed; }
+
+/* Variante grande (pantalla de inicio) */
+.grande .entrada { padding: 17px 22px; font-size: 16px; }
+.grande .boton   { padding: 17px 30px; font-size: 14px; }
+
+/* Variante compacta (barra superior) */
+.compacto { margin-left: auto; width: min(420px, 60vw); }
+.compacto .entrada { padding: 9px 14px; font-size: 14px; }
+.compacto .boton   { padding: 9px 18px; font-size: 13px; }
+
+@media (max-width: 560px) {
+  .compacto { width: 100%; margin-left: 0; }
+}

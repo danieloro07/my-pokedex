@@ -1,0 +1,2 @@
+/* LA PISTA: los bloques que suben por encima del escenario */
+.pista { position: relative; z-index: 2; }

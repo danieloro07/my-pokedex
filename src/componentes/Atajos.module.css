@@ -1,0 +1,8 @@
+.atajos {
+  margin-top: 30px; display: flex; gap: 8px; flex-wrap: wrap;
+  align-items: center; justify-content: center;
+}
+.rotulo {
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+  color: #55555f; margin-right: 4px;
+}

@@ -16,6 +16,9 @@ npm run lint       # oxlint
 npm run build      # versión de producción en dist/
 ```
 
+Cada push a `main` compila, corre las pruebas y publica en GitHub Pages
+(`.github/workflows/deploy.yml`).
+
 ## Estructura
 
 ```

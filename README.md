@@ -1,5 +1,8 @@
 # Pokédex — React
 
+# Daniel Orozco Castaño
+https://danieloro07.github.io/my-pokedex/
+
 Migración de la Pokédex en JavaScript puro (`../index.html` + `../script.js`)
 a **Vite + React 19**, siguiendo el plan de `../MIGRACION-REACT.md`.
 
